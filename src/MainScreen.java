@@ -1,6 +1,3 @@
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class MainScreen {
@@ -20,8 +17,8 @@ public class MainScreen {
     public static void scanVehicles() {
         Scanner scanner = new Scanner(System.in);
         Vehicle v;
-        String name="";
-        int type=-1;
+        String name;
+        int type;
         while(true) {
             System.out.println("Enter a number (0->stop the scan, 1->Motorcycle, 2->Car, 3->Truck)");
             try{
@@ -32,9 +29,10 @@ public class MainScreen {
             }
             if(type==0){
                 break;
+            } if(type!=-1){
+                scanner.nextLine();
+                System.out.println("Enter vehicle name");
             }
-            scanner.nextLine();
-            System.out.println("Enter vehicle name");
             name = scanner.nextLine();
             switch (type) {
                 case 1:

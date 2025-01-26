@@ -10,6 +10,6 @@ public class Car extends  Vehicle{
 
     @Override
     public void fixed() {
-        System.out.println(getName() + " (Car): sunroof has been fixed");
+        System.out.println(getName() + "(Car): sunroof has been fixed");
     }
 }

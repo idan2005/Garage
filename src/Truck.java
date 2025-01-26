@@ -10,6 +10,6 @@ public class Truck extends Vehicle{
 
     @Override
     public void fixed() {
-        System.out.println(getName() + " (Truck): tailgate has been fixed");
+        System.out.println(getName() + "(Truck): tailgate has been fixed");
     }
 }

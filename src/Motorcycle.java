@@ -10,6 +10,6 @@ public class Motorcycle extends  Vehicle{
 
     @Override
     public void fixed() {
-        System.out.println(getName() + " (Motorcycle): both wheels where fixed");
+        System.out.println(getName() + "(Motorcycle): both wheels where fixed");
     }
 }
